@@ -4,7 +4,7 @@ function Cat() {
   return (
     <>
       <p> 
-         cat
+         cat (Fluffly, Magic, Foo-foo)
       </p>  
     </>
   )

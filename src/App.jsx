@@ -27,7 +27,6 @@ function App() {
 
 export default App
 
-      https://github.com/scottkushnier/vending.git
       
      
       
