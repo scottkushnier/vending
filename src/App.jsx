@@ -1,32 +1,21 @@
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Vending from "./Vending.jsx";
+import Chips from "./Chips";
+import Coke from "./Coke";
+import Candy from "./Candy";
 
-import './App.css'
-import Book from './Book'
-import Cat from './Cat'
-import Dog from './Dog'
-
-import { Link, BrowserRouter as Router, Route } from "react-router-dom";
 function App() {
   return (
-    <>
-      <p> here, there, more</p>
-         <Router>
-            <Route path="/">
-              <Book />
-            </Route>
-            <Route path="/cat">
-              <Cat />
-            </Route>
-            <Route path="/dog">
-              <Dog/>
-            </Route>
-            <Link to="/cat">Go to Cat</Link>
-         </Router>  
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Vending />} />
+        <Route path="/candy" element={<Candy />} />
+        <Route path="/chips" element={<Chips />} />
+        <Route path="/coke" element={<Coke />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
-
-      
-     
-      
+export default App;
